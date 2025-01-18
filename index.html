@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asma Zayed Portfolio</title>
+    <title>Asmaa Zayed Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -11,6 +11,7 @@
             background-color: #f4f4f4;
             color: #000;
             margin: 0;
+            padding: 0;
         }
 
         header {
@@ -33,6 +34,11 @@
             width: 150px;
             border-radius: 50%;
             margin-top: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
         }
 
         nav {
@@ -62,6 +68,11 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
         }
 
         section h2 {
@@ -83,13 +94,44 @@
             max-width: 100%;
             height: auto;
             border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project h3 {
+            color: #ff8c00;
+            font-size: 1.5em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 0 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Asma Zayed</h1>
+        <h1>Asmaa Zayed</h1>
         <p>Data Analyst | Science Enthusiast</p>
         <img src="images/profile.jpg" alt="Asma Zayed">
     </header>
@@ -107,21 +149,24 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div>
+
+        <div class="project">
             <h3>Startup Data Analysis</h3>
             <p>Analyzed startup data using Python, SQL, and Power BI to deliver actionable insights and predictions.</p>
-            <img src="images/startup-analysis.png" alt="Startup Data Analysis Screenshot">
+            <img src="images/startup-analysis.png" alt="Startup Data Analysis Screenshot" onclick="window.open('images/startup-analysis.png', '_blank')">
         </div>
-        <div>
+
+        <div class="project">
             <h3>Market Insights Dashboard</h3>
             <p>Created an interactive Power BI dashboard to visualize market trends and business opportunities.</p>
-            <img src="images/dashboard.png" alt="Market Dashboard Screenshot">
+            <img src="images/dashboard.png" alt="Market Dashboard Screenshot" onclick="window.open('images/dashboard.png', '_blank')">
         </div>
+
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:asma.zayed@example.com">asma.zayed@example.com</a></p>
+        <p>Email: <a href="mailto:asma.zayed@gamil.com">asma.zayed@gamil.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/asma-zayed" target="_blank">linkedin.com/in/asma-zayed</a></p>
     </section>
 
