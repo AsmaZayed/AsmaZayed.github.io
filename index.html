@@ -62,7 +62,7 @@
         }
 
         section {
-            max-width: 900px;
+            max-width: 800px;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
@@ -111,33 +111,30 @@
             font-size: 1.5em;
         }
 
-        /* About Me Section with Image on Left and Text on Right */
         .about-content {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 20px;
         }
 
         .about-content img {
-            width: 180px;
-            height: 180px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
         }
 
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 10px;
-            padding: 0;
+        .skills ul {
             list-style-type: none;
+            padding: 0;
         }
 
-        .skills-list li {
+        .skills li {
             background-color: #ff8c00;
-            color: white;
+            color: #fff;
+            margin: 5px;
             padding: 10px;
             border-radius: 5px;
-            text-align: center;
+            display: inline-block;
             font-weight: bold;
         }
 
@@ -161,8 +158,8 @@
                 align-items: center;
             }
 
-            .skills-list {
-                grid-template-columns: 1fr 1fr;
+            .skills li {
+                font-size: 14px;
             }
         }
     </style>
@@ -172,7 +169,7 @@
     <header>
         <h1>Asmaa Zayed</h1>
         <p>Data Analyst | Science Enthusiast</p>
-        <img src="images/profile.jpg" alt="Asma Zayed">
+        <img src="images/profile.jpg" alt="Asmaa Zayed">
     </header>
 
     <nav>
@@ -185,22 +182,21 @@
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
-            <img src="images/profile.jpg" alt="Asma Zayed">
+            <img src="images/profile.jpg" alt="Asmaa Zayed">
             <p>I am a Data Analyst with a background in science and a passion for uncovering insights through data. I have experience using Python, Power BI, Excel, and SQL to analyze complex datasets. Recently, I worked on projects focused on startup data analysis, providing actionable insights and predictions.</p>
         </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul class="skills-list">
+        <ul class="skills">
             <li>Python</li>
             <li>SQL</li>
             <li>Power BI</li>
             <li>Excel</li>
+            <li>Data Analysis</li>
             <li>Data Visualization</li>
-            <li>Machine Learning</li>
-            <li>Data Cleaning</li>
-            <li>Statistical Analysis</li>
+            <li>Database Management</li>
         </ul>
     </section>
 
@@ -208,9 +204,19 @@
         <h2>Projects</h2>
 
         <div class="project">
-            <h3>Startup Data Analysis</h3>
-            <p>Analyzed startup data using Python, SQL, and Power BI to deliver actionable insights and predictions.</p>
-            <img src="images/startup-analysis.png" alt="Startup Data Analysis Screenshot" onclick="window.open('images/startup-analysis.png', '_blank')">
+            <h3>Data Analysis for Startups - ICEALEX</h3>
+            <div>
+                <h4>Project Description:</h4>
+                <p>Analysis of startups participating in ICEALEX company programs over the past years.</p>
+                <p><strong>Project Goals:</strong></p>
+                <ul>
+                    <li>Build a database structure of startups from ICEALEX programs.</li>
+                    <li>Track and analyze progress, milestones, and investment history.</li>
+                </ul>
+                <h4>Tools Used:</h4>
+                <p>Python, SQL, Power BI, Excel</p>
+            </div>
+            <img src="images/startup-analysis.png" alt="Data Analysis for Startups" onclick="window.open('images/startup-analysis.png', '_blank')">
         </div>
 
         <div class="project">
@@ -224,6 +230,7 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:asmaa.zayed.sz@gmail.com">asmaa.zayed.sz@gmail.com</a></p>
+        <p>Phone: <a href="tel:+201028875530">+201028875530</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/asmaa-zayed-02909484/" target="_blank">linkedin.com/in/asmaa-zayed-02909484</a></p>
     </section>
 
