@@ -111,6 +111,18 @@
             font-size: 1.5em;
         }
 
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about-content img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
@@ -125,13 +137,18 @@
             section {
                 padding: 15px;
             }
+
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Asmaa Zayed</h1>
+        <h1>Asma Zayed</h1>
         <p>Data Analyst | Science Enthusiast</p>
         <img src="images/profile.jpg" alt="Asma Zayed">
     </header>
@@ -144,7 +161,10 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a Data Analyst with a background in science and a passion for uncovering insights through data. I have experience using Python, Power BI, Excel, and SQL to analyze complex datasets. Recently, I worked on projects focused on startup data analysis, providing actionable insights and predictions.</p>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="Asma Zayed">
+            <p>I am a Data Analyst with a background in science and a passion for uncovering insights through data. I have experience using Python, Power BI, Excel, and SQL to analyze complex datasets. Recently, I worked on projects focused on startup data analysis, providing actionable insights and predictions.</p>
+        </div>
     </section>
 
     <section id="projects">
@@ -166,12 +186,12 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:asma.zayed@gamil.com">asma.zayed@gamil.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/asma-zayed" target="_blank">linkedin.com/in/asma-zayed</a></p>
+        <p>Email: <a href="mailto:asmaa.zayed.sz@gmail.com">asmaa.zayed.sz@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/asmaa-zayed-02909484/" target="_blank">linkedin.com/in/asmaa-zayed-02909484</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Asma Zayed. All Rights Reserved.</p>
+        <p>&copy; 2025 Asmaa Zayed. All Rights Reserved.</p>
     </footer>
 
 </body>
